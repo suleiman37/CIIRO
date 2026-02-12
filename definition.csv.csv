@@ -1,0 +1,61 @@
+Title: Assignment 1 of DS and ML
+1. Define Machine Learning using a real-life example?
+
+Machine Learning is a part or a branch of Artificial Intelligence where computers learn from data without being given direct instructions.
+
+Real-life examples:
+
+Spam filtering
+
+House price prediction
+
+2. Compare Supervised Learning and Unsupervised Learning, giving an example of each?
+
+Supervised Learning uses labeled data, while Unsupervised Learning uses unlabeled data.
+
+2.1 Definition of Supervised Learning and its types?
+
+Supervised learning is when the computer learns from labeled data that gives an output.
+
+Types:
+
+Regression
+
+Classification
+
+2.2 Definition of Unsupervised Learning and its types?
+
+Unsupervised learning is when the computer learns from unlabeled data.
+
+Types:
+
+Clustering
+
+Dimensionality Reduction
+
+3. What causes Overfitting? How can it be prevented?
+
+Overfitting happens when a model gets few samples.
+
+It can be prevented by getting a lot of samples.
+
+4. Explain how training data and test data are split, and why this process is necessary.
+
+Training set:
+It is used to teach the model.
+
+Test set:
+It is used to check how the model has memorized the data.
+
+5. Find one case study that explains how Machine Learning has been applied in healthcare, business, or transportation.
+5.1 Healthcare
+
+Machine Learning has been applied in healthcare in different ways. AI is a large part that works in healthcare. Some machines are used to research data and store data.
+
+5.2 Business
+
+Business has applied ML in many ways. For example, Alibaba is an e-commerce company. The machine memorizes user data to ensure the security and privacy of data. If a person puts an email and password, the computer checks this data with the memorized data.
+
+5.3 Transportation
+
+Machine Learning participates in transportation in different ways. If you look at immigration, you will see tools that check travelers’ fingerprints to know if they are criminal or not criminal. This is like a supervised example of classification, such as spam or not spam. 

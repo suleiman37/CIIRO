@@ -1,0 +1,111 @@
+# WEIGHT OF STUDENTS – Dataset & Short Research Paper
+
+## 1. Title & Collection Method
+
+**Title:** WEIGHT OF STUDENTS
+**Collection Method:**
+This dataset was collected through a small school-based survey. Students were asked simple yes/no questions about their daily meals and habits (breakfast, lunch, dinner, snacks, water intake) and whether they attend school regularly. Due to privacy and cultural reasons, some female students did not share complete information, which resulted in missing values in some rows.
+
+---
+
+## 2. Description of Features & Label
+
+### Features (X)
+
+All features are categorical and mostly binary (Yes/No):
+
+* **NAME:** Student name (male and female names included)
+* **QURAAC:** Eats breakfast (Yes/No)
+* **QADO:** Eats lunch (Yes/No)
+* **CASHO:** Eats dinner (Yes/No)
+* **SNISHS:** Eats snacks between meals (Yes/No)
+* **BIYAHA:** Drinks enough water daily (Yes/No)
+* **SCHOOL:** Attends school regularly (Yes/No)
+
+### Label (y)
+
+* **WEIGHT:** Weight category of the student (Class label)
+
+  * *under-weight*
+  * *normal*
+  * *over-weight*
+
+This makes the problem a **classification task**.
+
+---
+
+## 3. Dataset Structure
+
+* **Number of Rows:** 54 students
+* **Number of Columns:** 8 (7 features + 1 label)
+
+### Sample of the Dataset (10 rows)
+
+| NAME    | QURAAC | QADO | CASHO | SNISHS | BIYAHA | SCHOOL | WEIGHT       |
+| ------- | ------ | ---- | ----- | ------ | ------ | ------ | ------------ |
+| Ahmed   | Yes    | Yes  | No    | No     | Yes    | Yes    | Under-weight |
+| Ayaan   | Yes    | Yes  | Yes   | Yes    | Yes    | Yes    | Normal       |
+| Mohamed | No     | Yes  | Yes   | No     | No     | Yes    | Under-weight |
+| Fatima  | Yes    | No   | Yes   | Yes    | Yes    | Yes    | Normal       |
+| Ali     | No     | No   | Yes   | No     | No     | No     | Under-weight |
+| Hodan   | Yes    | Yes  | Yes   | No     | Yes    | Yes    | Normal       |
+| Yusuf   | Yes    | No   | No    | No     | Yes    | Yes    | Under-weight |
+| Maryan  | Yes    | Yes  | Yes   | Yes    | No     | Yes    | Over-weight  |
+| Omar    | No     | Yes  | No    | No     | No     | Yes    | Under-weight |
+| Sahra   | Yes    | Yes  | —     | Yes    | Yes    | Yes    | Normal       |
+
+**Note:** The symbol (—) represents missing values.
+
+---
+
+## 4. Quality Issues in the Dataset
+
+The dataset contains several real-world data quality problems:
+
+* **Missing Values:** Some female students did not provide full information (e.g., CASHO missing).
+* **Class Imbalance:** More students fall into the *under-weight* category compared to *over-weight*.
+* **Categorical Noise:** Inconsistent habits (e.g., eating lunch but skipping breakfast).
+* **Small Dataset Size:** Only 54 rows, which may limit model generalization.
+
+These issues reflect realistic data collection challenges in schools.
+
+---
+
+## 5. Use Case in Machine Learning
+
+This dataset can be used for a **Classification** task.
+
+### Possible ML Objective
+
+Predict a student’s **WEIGHT category** (Under-weight, Normal, Over-weight) based on their eating habits and school attendance.
+
+### Suitable Algorithms
+
+* Decision Tree Classifier
+* Naive Bayes (for categorical data)
+* Logistic Regression (after encoding)
+* K-Nearest Neighbors (KNN)
+
+### Preprocessing Steps
+
+* Encode Yes/No values (e.g., Yes=1, No=0)
+* Handle missing values (removal or imputation)
+* Balance classes (oversampling/undersampling)
+
+---
+
+## 6. Short Research Discussion
+
+Student nutrition is closely related to academic performance and physical development. This dataset highlights how daily meal patterns and water intake may influence student weight categories. Students who skip major meals such as breakfast and lunch are more likely to fall into the under-weight class. On the other hand, frequent snacking combined with full meals may increase the likelihood of normal or over-weight classifications.
+
+Despite its limitations, the dataset is valuable for educational purposes. It allows students to practice data preprocessing, exploratory data analysis, and classification modeling using real-life inspired data. Ethical considerations, such as privacy and missing data from female students, are also important lessons highlighted by this dataset.
+
+---
+
+## 7. Conclusion
+
+The **WEIGHT OF STUDENTS** dataset is a small, categorical, and realistic dataset designed for learning machine learning classification concepts. While it contains missing values and imbalance, these challenges make it suitable for practicing real-world data handling. With proper preprocessing, the dataset can be effectively used to build and evaluate classification models that predict student weight categories based on lifestyle and school-related features.
+
+---
+
+**End of Paper**
